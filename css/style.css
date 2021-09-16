@@ -1,0 +1,214 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+/* Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid rgba(88, 83, 83, 0.849);
+  border-radius: 10px;
+  z-index: 40;
+  background-color: rgba(15, 14, 14, 0.959);
+  width: 2000px;
+  max-width: 1500%;
+  padding: 200px;
+  height: 100%;
+  font: bold;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  align-self: start;
+}
+.close-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: rgb(255, 9, 9);
+}
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.modal-body {
+  padding: 20px 15px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+/* Body Registrasi */
+.body_registrasi {
+  margin: 5px 0px 10px 0px;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: right;
+  padding: 40px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 10px;
+}
+.input-group input {
+  height: 50px;
+  width: 40%;
+  padding: 5px 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 0px;
+  background: transparent;
+  text-align: center;
+  border: none;
+  border-bottom-style: double;
+  color: rgb(255, 255, 255);
+}
+.main__btn2 {
+  font-size: 1.8rem;
+  background: #404041;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.select {
+  height: 50px;
+  width: 40%;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: rgb(34, 8, 8);
+  border-radius: 0px;
+  border: none;
+  background: transparent scroll #0cece198;
+  text-align: center;
+  border-bottom-style: double;
+  border-color: whitesmoke;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: #fff;
+  transition: all 0.3s ease;
+} */
+@media screen and (max-width: 960px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .buttontrial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+  }
+}
+/* Body Section */
+.body {
+  background: linear-gradient(to right, #08c7e9e0, #1df5fdee, #0cc0d8c7);
+  background-image: url(../img/hero-img.png);
+  background-color: rgb(12, 224, 224);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  background-position-y: center;
+}
+.navbar {
+  background-color: rgba(9, 186, 240, 0);
+  padding: 2%;
+  position: fixed;
+  justify-content: center;
+}
+.hero {
+  padding: 200px 0;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 50px;
+}
+.hero__heading {
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: rgb(15, 1, 1);
+}
+.hero__description {
+  font-size: 20px;
+}
+/* .main__btn {
+  font-size: 1.8rem;
+  background: #e1e6e6;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  border-color: rgb(255, 12, 12);
+} */
